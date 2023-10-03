@@ -4,7 +4,6 @@
 		"config:base"
 	],
 	"enabledManagers": [
-		"maven",
 		"gradle",
 		"gradle-wrapper",
 		"github-actions"
@@ -16,6 +15,7 @@
 	],
 	"hostRules": [
 		{
+			"hostType": "maven",
 			"matchHost": "artifactory.ubique.ch/",
 			"userName": "mend-renovate",
 			"encrypted": {
@@ -36,6 +36,7 @@
 				"io.openmobilemaps:smartdrawing",
 			],
 			"groupName": "Internal packages",
+			"matchDatasources": ["maven"],
 			"registryUrls": [
 				"https://artifactory.ubique.ch/artifactory/android"
 			],
