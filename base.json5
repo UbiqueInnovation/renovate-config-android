@@ -24,16 +24,11 @@
 		}
 	],
 	"packageRules": [
-		{
-			"matchDatasources": ["maven"],
-			"registryUrls": [
-				"https://artifactory.ubique.ch/artifactory/android"
-			]
-		},
 		// These packages are not public, so renovate does not find the packages anyway
 		{
 			"matchPackagePrefixes": [
 				"ch.ubique.android",
+				"ch.ubique.android:utils-kt",
 				"ch.ubique.geo",
 				"ch.ubique.gradle:deus-ex-android",
 				"ch.ubique.i18n",
@@ -42,6 +37,10 @@
 				"io.openmobilemaps:smartdrawing",
 			],
 			"groupName": "Internal packages",
+			"matchDatasources": ["maven"],
+			"registryUrls": [
+				"https://artifactory.ubique.ch/artifactory/android"
+			],
 			matchUpdateTypes: [
 				"major",
 				"minor",
