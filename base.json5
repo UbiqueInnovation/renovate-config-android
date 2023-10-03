@@ -36,6 +36,7 @@
 			],
 			"excludePackagePrefixes": [
 				"ch.ubique.android",
+				"ch.ubique.android:utils-kt",
 				"ch.ubique.geo",
 				"ch.ubique.i18n",
 				"ch.ubique.viadi",
