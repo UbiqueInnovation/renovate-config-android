@@ -19,17 +19,43 @@
 		}
 	],
 	"packageRules": [
-//		{
-//			"matchDatasources": ["maven"],
-//			"registryUrls": [
-//				"https://repo.maven.apache.org/maven2/",
-//				"https://dl.google.com/dl/android/maven2/",
-//				"https://artifactory.ubique.ch/artifactory/android"
-//			]
-//		},
-		// These packages are not public, so renovate does not find the packages anyway
 		{
-			"matchPackagePrefixes": [
+			"matchPackagePatterns": [
+				"*"
+			],
+			"groupName": "dependencies",
+			matchUpdateTypes: [
+				"major",
+				"minor",
+				"patch"
+			],
+			"excludePackagePatterns": [
+				"com.android.application",
+				"com.android.library",
+				"ch.ubique.gradle:deus-ex-android",
+				"ch.ubique.gradle:ubdiag-android",
+				"ch.ubique.android"
+			],
+			separateMajorMinor: true,
+			separateMinorPatch: true
+		},
+		{
+			// Group AGP and our accompanying gradle plugins together
+			"matchPackagePatterns": [
+				"com.android.application",
+				"com.android.library",
+				"ch.ubique.gradle:ubdiag-android"
+			],
+			"groupName": "AGP",
+			matchUpdateTypes: [
+				"major",
+				"minor",
+				"patch"
+			]
+		},
+		{
+			// These packages are not public, so renovate does not find the packages anyway
+			"matchPackagePatterns": [
 				"ch.ubique.android",
 				"ch.ubique.geo",
 				"ch.ubique.gradle:deus-ex-android",
@@ -48,39 +74,6 @@
 				"minor",
 				"patch"
 			]
-		},
-		{
-			"matchPackagePatterns": [
-				"com.android.application",
-				"com.android.library",
-				"ch.ubique.gradle:ubdiag-android"
-			],
-			"groupName": "AGP",
-			matchUpdateTypes: [
-				"major",
-				"minor",
-				"patch"
-			]
-		},
-		{
-			"matchPackagePatterns": [
-				"*"
-			],
-			"groupName": "dependencies",
-			matchUpdateTypes: [
-				"major",
-				"minor",
-				"patch"
-			],
-			"excludePackagePrefixes": [
-				"com.android.application",
-				"com.android.library",
-				"ch.ubique.gradle:deus-ex-android",
-				"ch.ubique.gradle:ubdiag-android",
-				"ch.ubique.android"
-			],
-			separateMajorMinor: true,
-			separateMinorPatch: true
 		},
 	],
 	"schedule": [
