@@ -32,7 +32,7 @@
 		{
 			// Default group for all dependencies
 			"matchPackagePatterns": [
-				"*"
+				"nevergonnagiveyouup"
 			],
 			"excludePackageNames": [
 				"ch.ubique.android:utils-kt"
