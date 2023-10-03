@@ -76,9 +76,6 @@
 				"io.openmobilemaps:offline-map-sdk",
 				"io.openmobilemaps:smartdrawing",
 			],
-			"registryUrls": [
-				"https://artifactory.ubique.ch/artifactory/android"
-			],
 			"groupName": "Internal packages",
 			matchUpdateTypes: [
 				"major",
