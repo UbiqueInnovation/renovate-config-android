@@ -76,7 +76,6 @@
 				"io.openmobilemaps:offline-map-sdk",
 				"io.openmobilemaps:smartdrawing",
 			],
-			"matchDatasources": ["maven"],
 			"registryUrls": [
 				"https://artifactory.ubique.ch/artifactory/android"
 			],
