@@ -36,7 +36,6 @@
 		{
 			"matchPackagePrefixes": [
 				"ch.ubique.android",
-				"ch.ubique.android:utils-kt",
 				"ch.ubique.geo",
 				"ch.ubique.gradle:deus-ex-android",
 				"ch.ubique.i18n",
@@ -78,7 +77,8 @@
 				"com.android.application",
 				"com.android.library",
 				"ch.ubique.gradle:deus-ex-android",
-				"ch.ubique.gradle:ubdiag-android"
+				"ch.ubique.gradle:ubdiag-android",
+				"ch.ubique.android"
 			],
 			separateMajorMinor: true,
 			separateMinorPatch: true
