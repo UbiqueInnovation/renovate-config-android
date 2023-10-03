@@ -63,6 +63,12 @@
 				"minor",
 				"patch"
 			],
+			"excludePackagePrefixes": [
+				"com.android.application",
+				"com.android.library",
+				"ch.ubique.gradle:deus-ex-android",
+				"ch.ubique.gradle:ubdiag-android"
+			],
 			separateMajorMinor: true,
 			separateMinorPatch: true
 		},
