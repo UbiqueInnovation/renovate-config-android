@@ -19,16 +19,18 @@
 		}
 	],
 	"packageRules": [
+		// Note: Renovate always evaluates all package rules and the last one is applied. So the more specific ones have to be at the bottom
 		{
+			// Define the registry urls for maven packages, including our own private artifactory
 			"matchDatasources": ["maven"],
 			"registryUrls": [
 				"https://repo.maven.apache.org/maven2/",
 				"https://dl.google.com/dl/android/maven2/",
-				"https://plugins.gradle.org/m2/",
 				"https://artifactory.ubique.ch/artifactory/android"
 			]
 		},
 		{
+			// Default group for all dependencies
 			"matchPackagePatterns": [
 				"*"
 			],
@@ -38,13 +40,6 @@
 				"minor",
 				"patch"
 			],
-//			"excludePackagePatterns": [
-//				"com.android.application",
-//				"com.android.library",
-//				"ch.ubique.gradle:deus-ex-android",
-//				"ch.ubique.gradle:ubdiag-android",
-//				"ch.ubique.android"
-//			],
 			separateMajorMinor: true,
 			separateMinorPatch: true
 		},
@@ -53,7 +48,8 @@
 			"matchPackagePatterns": [
 				"com.android.application",
 				"com.android.library",
-				"ch.ubique.gradle:ubdiag-android"
+				"ch.ubique.gradle:ubdiag-android",
+				"ch.ubique.gradle:deus-ex-android"
 			],
 			"groupName": "AGP",
 			matchUpdateTypes: [
@@ -63,21 +59,16 @@
 			]
 		},
 		{
-			// These packages are not public, so renovate does not find the packages anyway
+			// These packages are in our private artifactory
 			"matchPackagePatterns": [
 				"ch.ubique.android",
 				"ch.ubique.geo",
-				"ch.ubique.gradle:deus-ex-android",
 				"ch.ubique.i18n",
 				"ch.ubique.viadi",
 				"io.openmobilemaps:offline-map-sdk",
 				"io.openmobilemaps:smartdrawing",
 			],
 			"groupName": "Internal packages",
-//			"matchDatasources": ["maven"],
-//			"registryUrls": [
-//				"https://artifactory.ubique.ch/artifactory/android"
-//			],
 			matchUpdateTypes: [
 				"major",
 				"minor",
