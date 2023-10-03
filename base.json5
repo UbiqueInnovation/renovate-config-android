@@ -34,7 +34,7 @@
 			"matchPackagePatterns": [
 				"*"
 			],
-			"excludePackagePatterns": [
+			"excludePackagePrefixes": [
 				"ch.ubique.android",
 				"ch.ubique.geo",
 				"ch.ubique.i18n",
@@ -53,7 +53,7 @@
 		},
 		{
 			// Group AGP and our accompanying gradle plugins together
-			"matchPackagePatterns": [
+			"matchPackagePrefixes": [
 				"com.android.application",
 				"com.android.library",
 				"ch.ubique.gradle:ubdiag-android",
@@ -68,7 +68,7 @@
 		},
 //		{
 //			// These packages are in our private artifactory
-//			"matchPackagePatterns": [
+//			"matchPackagePrefixes": [
 //				"ch.ubique.android",
 //				"ch.ubique.geo",
 //				"ch.ubique.i18n",
