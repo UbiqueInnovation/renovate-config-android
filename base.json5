@@ -30,6 +30,10 @@
 //			]
 //		},
 		{
+			"matchPackageNames": ["ch.ubique.android:utils-kt"],
+			"enabled": false
+		},
+		{
 			// Default group for all dependencies
 			"matchPackagePatterns": [
 				"nevergonnagiveyouup"
