@@ -34,6 +34,9 @@
 			"matchPackagePatterns": [
 				"*"
 			],
+			"excludePackageNames": [
+				"ch.ubique.android:utils-kt"
+			],
 			"excludePackagePatterns": [
 				"^ch\\.ubique\\.android:.*",
 				"^ch\\.ubique\\.geo:.*",
@@ -53,7 +56,7 @@
 		},
 		{
 			// Group AGP and our accompanying gradle plugins together
-			"matchPackagePrefixes": [
+			"matchPackageNames": [
 				"com.android.application",
 				"com.android.library",
 				"ch.ubique.gradle:ubdiag-android",
