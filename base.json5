@@ -20,15 +20,15 @@
 	],
 	"packageRules": [
 		// Note: Renovate always evaluates all package rules and the last one is applied. So the more specific ones have to be at the bottom
-//		{
-//			// Define the registry urls for maven packages, including our own private artifactory
-//			"matchDatasources": ["maven"],
-//			"registryUrls": [
-//				"https://repo.maven.apache.org/maven2/",
-//				"https://dl.google.com/dl/android/maven2/",
-//				"https://artifactory.ubique.ch/artifactory/android"
-//			]
-//		},
+		{
+			// Define the registry urls for maven packages, including our own private artifactory
+			"matchDatasources": ["maven"],
+			"registryUrls": [
+				"https://repo.maven.apache.org/maven2/",
+				"https://dl.google.com/dl/android/maven2/",
+				"https://artifactory.ubique.ch/artifactory/android"
+			]
+		},
 		{
 			// Default group for all dependencies
 			"matchPackagePatterns": [
