@@ -26,6 +26,9 @@
 	"packageRules": [
 		// These packages are not public, so renovate does not find the packages anyway
 		{
+			"matchPackagePatterns": [
+				"ch.ubique.android:*"
+			],
 			"matchPackagePrefixes": [
 				"ch.ubique.android",
 				"ch.ubique.geo",
