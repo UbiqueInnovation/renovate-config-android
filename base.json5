@@ -20,34 +20,27 @@
 	],
 	"packageRules": [
 		// Note: Renovate always evaluates all package rules and the last one is applied. So the more specific ones have to be at the bottom
-//		{
-//			// Define the registry urls for maven packages, including our own private artifactory
-//			"matchDatasources": ["maven"],
-//			"registryUrls": [
-//				"https://repo.maven.apache.org/maven2/",
-//				"https://dl.google.com/dl/android/maven2/",
-//				"https://artifactory.ubique.ch/artifactory/android"
-//			]
-//		},
 		{
-			"matchPackageNames": ["ch.ubique.android:utils-kt"],
-			"enabled": false
+			// Define the registry urls for maven packages, including our own private artifactory
+			"matchDatasources": ["maven"],
+			"registryUrls": [
+				"https://repo.maven.apache.org/maven2/",
+				"https://dl.google.com/dl/android/maven2/",
+//				"https://artifactory.ubique.ch/artifactory/android"
+			]
 		},
 		{
 			// Default group for all dependencies
 			"matchPackagePatterns": [
-				"nevergonnagiveyouup"
+				"*"
 			],
-			"excludePackageNames": [
-				"ch.ubique.android:utils-kt"
-			],
-			"excludePackagePatterns": [
-				"^ch\\.ubique\\.android:.*",
-				"^ch\\.ubique\\.geo:.*",
-				"^ch\\.ubique\\.i18n:.*",
-				"^ch\\.ubique\\.viadi:.*",
-				"^io\\.openmobilemaps:offline-map-sdk",
-				"^io\\.openmobilemaps:smartdrawing"
+			"excludePackagePrefixes": [
+				"ch.ubique.android",
+				"ch.ubique.geo",
+				"ch.ubique.i18n",
+				"ch.ubique.viadi",
+				"io.openmobilemaps:offline-map-sdk",
+				"io.openmobilemaps:smartdrawing"
 			],
 			"groupName": "dependencies",
 			matchUpdateTypes: [
@@ -73,27 +66,27 @@
 				"patch"
 			]
 		},
-//		{
-//			// These packages are in our private artifactory
-//			"matchPackagePrefixes": [
-//				"ch.ubique.android",
-//				"ch.ubique.geo",
-//				"ch.ubique.i18n",
-//				"ch.ubique.viadi",
-//				"io.openmobilemaps:offline-map-sdk",
-//				"io.openmobilemaps:smartdrawing",
-//			],
-//			"matchDatasources": ["maven"],
-//			"registryUrls": [
-//				"https://artifactory.ubique.ch/artifactory/android"
-//			],
-//			"groupName": "Internal packages",
-//			matchUpdateTypes: [
-//				"major",
-//				"minor",
-//				"patch"
-//			]
-//		},
+		{
+			// These packages are in our private artifactory
+			"matchPackagePrefixes": [
+				"ch.ubique.android",
+				"ch.ubique.geo",
+				"ch.ubique.i18n",
+				"ch.ubique.viadi",
+				"io.openmobilemaps:offline-map-sdk",
+				"io.openmobilemaps:smartdrawing",
+			],
+			"matchDatasources": ["maven"],
+			"registryUrls": [
+				"https://artifactory.ubique.ch/artifactory/android"
+			],
+			"groupName": "Internal packages",
+			matchUpdateTypes: [
+				"major",
+				"minor",
+				"patch"
+			]
+		},
 	],
 	"schedule": [
 		"before 3am on the first day of the month"
