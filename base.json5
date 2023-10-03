@@ -75,10 +75,10 @@
 				"io.openmobilemaps:smartdrawing",
 			],
 			"groupName": "Internal packages",
-			"matchDatasources": ["maven"],
-			"registryUrls": [
-				"https://artifactory.ubique.ch/artifactory/android"
-			],
+//			"matchDatasources": ["maven"],
+//			"registryUrls": [
+//				"https://artifactory.ubique.ch/artifactory/android"
+//			],
 			matchUpdateTypes: [
 				"major",
 				"minor",
