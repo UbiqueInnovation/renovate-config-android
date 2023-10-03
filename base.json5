@@ -66,27 +66,27 @@
 				"patch"
 			]
 		},
-		{
-			// These packages are in our private artifactory
-			"matchPackagePatterns": [
-				"ch.ubique.android",
-				"ch.ubique.geo",
-				"ch.ubique.i18n",
-				"ch.ubique.viadi",
-				"io.openmobilemaps:offline-map-sdk",
-				"io.openmobilemaps:smartdrawing",
-			],
-			"matchDatasources": ["maven"],
-			"registryUrls": [
-				"https://artifactory.ubique.ch/artifactory/android"
-			],
-			"groupName": "Internal packages",
-			matchUpdateTypes: [
-				"major",
-				"minor",
-				"patch"
-			]
-		},
+//		{
+//			// These packages are in our private artifactory
+//			"matchPackagePatterns": [
+//				"ch.ubique.android",
+//				"ch.ubique.geo",
+//				"ch.ubique.i18n",
+//				"ch.ubique.viadi",
+//				"io.openmobilemaps:offline-map-sdk",
+//				"io.openmobilemaps:smartdrawing",
+//			],
+//			"matchDatasources": ["maven"],
+//			"registryUrls": [
+//				"https://artifactory.ubique.ch/artifactory/android"
+//			],
+//			"groupName": "Internal packages",
+//			matchUpdateTypes: [
+//				"major",
+//				"minor",
+//				"patch"
+//			]
+//		},
 	],
 	"schedule": [
 		"before 3am on the first day of the month"
