@@ -1,0 +1,42 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": [
+		"config:base"
+	],
+	"enabledManagers": [
+		"gradle",
+		"gradle-wrapper",
+		"github-actions"
+	],
+	"packageRules": [
+		// These packages are not public, so renovate does not find the packages anyway
+		{
+			"matchPackagePrefixes": [
+				"ch.ubique.android",
+				"ch.ubique.geo",
+				"ch.ubique.gradle",
+				"ch.ubique.i18n",
+				"ch.ubique.viadi",
+				"io.openmobilemaps:offline-map-sdk",
+				"io.openmobilemaps:smartdrawing",
+			],
+			"enabled": false
+		},
+		{
+			"matchPackagePatterns": [
+				"*"
+			],
+			"groupName": "dependencies",
+			matchUpdateTypes: [
+				"major",
+				"minor",
+				"patch"
+			],
+			separateMajorMinor: true,
+			separateMinorPatch: true
+		},
+	],
+	"schedule": [
+		"before 3am on the first day of the month"
+	]
+}
