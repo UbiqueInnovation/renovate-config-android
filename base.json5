@@ -8,11 +8,6 @@
 		"gradle-wrapper",
 		"github-actions"
 	],
-	"baseBranches": [
-		"main",
-		"master",
-		"develop"
-	],
 	"hostRules": [
 		{
 			"hostType": "maven",
@@ -24,14 +19,14 @@
 		}
 	],
 	"packageRules": [
-		{
-			"matchDatasources": ["maven"],
-			"registryUrls": [
-				"https://repo.maven.apache.org/maven2/",
-				"https://dl.google.com/dl/android/maven2/",
-				"https://artifactory.ubique.ch/artifactory/android"
-			]
-		},
+//		{
+//			"matchDatasources": ["maven"],
+//			"registryUrls": [
+//				"https://repo.maven.apache.org/maven2/",
+//				"https://dl.google.com/dl/android/maven2/",
+//				"https://artifactory.ubique.ch/artifactory/android"
+//			]
+//		},
 		// These packages are not public, so renovate does not find the packages anyway
 		{
 			"matchPackagePrefixes": [
@@ -44,6 +39,10 @@
 				"io.openmobilemaps:smartdrawing",
 			],
 			"groupName": "Internal packages",
+			"matchDatasources": ["maven"],
+			"registryUrls": [
+				"https://artifactory.ubique.ch/artifactory/android"
+			],
 			matchUpdateTypes: [
 				"major",
 				"minor",
