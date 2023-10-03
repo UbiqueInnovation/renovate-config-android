@@ -26,7 +26,7 @@
 			"registryUrls": [
 				"https://repo.maven.apache.org/maven2/",
 				"https://dl.google.com/dl/android/maven2/",
-//				"https://artifactory.ubique.ch/artifactory/android"
+				"https://artifactory.ubique.ch/artifactory/android"
 			]
 		},
 		{
