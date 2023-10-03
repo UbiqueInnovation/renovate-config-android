@@ -34,14 +34,6 @@
 			"matchPackagePatterns": [
 				"*"
 			],
-			"excludePackagePrefixes": [
-				"ch.ubique.android",
-				"ch.ubique.geo",
-				"ch.ubique.i18n",
-				"ch.ubique.viadi",
-				"io.openmobilemaps:offline-map-sdk",
-				"io.openmobilemaps:smartdrawing"
-			],
 			"groupName": "dependencies",
 			matchUpdateTypes: [
 				"major",
