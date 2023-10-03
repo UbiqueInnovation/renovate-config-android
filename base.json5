@@ -38,13 +38,13 @@
 				"minor",
 				"patch"
 			],
-			"excludePackagePatterns": [
-				"com.android.application",
-				"com.android.library",
-				"ch.ubique.gradle:deus-ex-android",
-				"ch.ubique.gradle:ubdiag-android",
-				"ch.ubique.android"
-			],
+//			"excludePackagePatterns": [
+//				"com.android.application",
+//				"com.android.library",
+//				"ch.ubique.gradle:deus-ex-android",
+//				"ch.ubique.gradle:ubdiag-android",
+//				"ch.ubique.android"
+//			],
 			separateMajorMinor: true,
 			separateMinorPatch: true
 		},
@@ -66,7 +66,6 @@
 			// These packages are not public, so renovate does not find the packages anyway
 			"matchPackagePatterns": [
 				"ch.ubique.android",
-				"ch.ubique.android:utils-kt",
 				"ch.ubique.geo",
 				"ch.ubique.gradle:deus-ex-android",
 				"ch.ubique.i18n",
