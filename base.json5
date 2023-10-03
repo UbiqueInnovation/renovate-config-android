@@ -37,6 +37,7 @@
 				"io.openmobilemaps:smartdrawing",
 			],
 			"groupName": "Internal packages",
+			"matchManagers": ["gradle"],
 			"matchDatasources": ["maven"],
 			"registryUrls": [
 				"https://artifactory.ubique.ch/artifactory/android"
