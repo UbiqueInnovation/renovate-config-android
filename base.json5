@@ -44,6 +44,14 @@
 			separateMinorPatch: true
 		},
 		{
+			// Group Kotlin together with any packages that depend on it
+			"matchPackagePatterns": [
+				"org.jetbrains.kotlin.android",
+				"androidx.compose.compiler"
+			],
+			"groupName": "kotlin"
+		},
+		{
 			// Group AGP and our accompanying gradle plugins together
 			"matchPackageNames": [
 				"com.android.application",
