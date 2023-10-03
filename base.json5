@@ -8,11 +8,6 @@
 		"gradle-wrapper",
 		"github-actions"
 	],
-	"baseBranches": [
-		"main",
-		"master",
-		"develop"
-	],
 	"hostRules": [
 		{
 			"hostType": "maven",
@@ -24,12 +19,6 @@
 		}
 	],
 	"packageRules": [
-		{
-			"matchDatasources": ["maven"],
-			"registryUrls": [
-				"https://artifactory.ubique.ch/artifactory/android/"
-			]
-		},
 		// These packages are not public, so renovate does not find the packages anyway
 		{
 			"matchPackagePrefixes": [
@@ -41,7 +30,10 @@
 				"io.openmobilemaps:offline-map-sdk",
 				"io.openmobilemaps:smartdrawing",
 			],
-			"groupName": "internal packages",
+			"groupName": "Internal packages",
+			"registryUrls": [
+				"https://artifactory.ubique.ch/artifactory/android/"
+			],
 			matchUpdateTypes: [
 				"major",
 				"minor",
