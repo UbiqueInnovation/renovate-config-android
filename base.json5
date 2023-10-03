@@ -34,6 +34,11 @@
 			"registryUrls": [
 				"https://artifactory.ubique.ch/artifactory/android/"
 			],
+			matchUpdateTypes: [
+				"major",
+				"minor",
+				"patch"
+			]
 		},
 		{
 			"matchPackagePatterns": [
@@ -42,6 +47,11 @@
 				"ch.ubique.gradle:ubdiag-android"
 			],
 			"groupName": "AGP",
+			matchUpdateTypes: [
+				"major",
+				"minor",
+				"patch"
+			]
 		},
 		{
 			"matchPackagePatterns": [
