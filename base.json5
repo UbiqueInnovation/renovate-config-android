@@ -57,7 +57,10 @@
 				"com.android.application",
 				"com.android.library",
 				"ch.ubique.gradle:ubdiag-android",
-				"ch.ubique.gradle:deus-ex-android"
+				"ch.ubique.gradle:deus-ex-android",
+				"ch.ubique.gradle:alpaka",
+				"ch.ubique.gradle:preset",
+				"ch.ubique.gradle:signing"
 			],
 			"groupName": "AGP",
 			matchUpdateTypes: [
